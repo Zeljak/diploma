@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potvrda o završetku</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        height: 1080px;
+        width: 1920px;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        color: #05dbf3;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 140px;
+      }
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+        color: #05dbf3;
+        font-size: 50px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      span {
+        color: #303242;
+      }
+
+      hr {
+        width: 1000px;
+        height: 1px;
+        color: #707070;
+      }
+
+      h3 {
+        font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+		margin-top: -20px;
+      }
+      h4 {
+        font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+	  h5 {
+		font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 24px;
+        line-height: 60px;
+        text-align: center;
+		text-transform: uppercase;
+		margin-top: 100px;
+	  }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: #e9eff2;
+        height: 820px;
+        width: 1660px;
+        margin: 130px;
+        border: solid 130px #303242;">
+      <!-- logo-left -->
+      <div>
+        <div style="margin-left: 60px; margin-top: 60px">
+          <img src="<LOGO_1/>" alt="Logo" />
+        </div>
+      </div>
+
+      <!-- logo-right -->
+      <div>
+        <div
+          style="
+            margin-right: 60px;
+            margin-top: 0;
+            display: flex;
+            justify-content: flex-end;">
+          <img src="<LOGO_2/>" alt="Logo" />
+        </div>
+      </div>
+
+      <!-- title-potvrda -->
+      <div>
+        <h2>POTVRDA</h2>
+        <h2><span>O POHAĐANJU OBUKE</span></h2>
+      </div>
+
+      <!-- ime i prezime -->
+      <div>
+        <h1><USER_FIRST_NAME />&nbsp;<USER_LAST_NAME /> ime i prezime</h1>
+        <hr />
+      </div>
+
+      <!-- korisnička obuka za -->
+      <div>
+        <h4>Korisnička obuka za</h4>
+      </div>
+
+      <!-- naziv obuke -->
+      <div>
+        <h3><CPNT_TITLE />naziv obuke</h3>
+      </div>
+
+	  <!-- datum -->
+	  <h5><COMPLETION_DAY/>&nbsp;
+		<COMPLETION_MONTH/>&nbsp;<COMPLETION_YEAR/>DD.MM.YYYY.</h5>
+    </div>
+  </body>
+</html>
