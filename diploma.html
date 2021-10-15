@@ -14,15 +14,25 @@
     />
 
     <style>
-      html,
-      body {
-        height: 1080px;
-        width: 1920px;
+      html
+     {
         margin: 0;
         font-family: "Roboto", sans-serif;
       }
 
-      h1 {
+	  @media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1920px) {
+
+	body {
+		background-color: #e9eff2;
+    border: solid 150px #303242;
+    height: 1024px;
+    width: 1920px;
+    margin: 130px;
+      
+	}
+	h1 {
         font-family: "Roboto", sans-serif;
         font-size: 50px;
         font-weight: 900;
@@ -38,11 +48,12 @@
         font-size: 50px;
         line-height: 20px;
         text-align: center;
-        text-transform: uppercase;
+        text-transform: uppercase; 
       }
 
       span {
         color: #303242;
+        margin-top: 0;
       }
 
       hr {
@@ -75,40 +86,101 @@
         line-height: 60px;
         text-align: center;
 		text-transform: uppercase;
-		margin-top: 100px;
+		margin-top: 150px;
 	  }
+  }
+  
+
+  @media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1023px) {
+
+	body { border: solid 20px #303242;
+    background-color: #e9eff2;}
+       
+	h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        color: #05dbf3;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 100px;
+    
+      }
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+        color: #05dbf3;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -20px;
+      }
+
+      span {
+        color: #303242;
+        margin-top: 0;
+      }
+
+      hr {
+       width: 90%;
+        height: 1px;
+        color: #707070;
+      }
+
+      h3 {
+        font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -35px;
+      }
+
+      h4 {
+        font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 16px;
+        line-height: 60px;
+        text-align: center;
+      }
+
+	  h5 {
+		font-family: "Roboto", sans-serif;
+        color: #303242;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+		text-transform: uppercase;
+		margin-top: 150px;
+	  }
+
+  }
+
+     
     </style>
   </head>
   <body>
-    <div
-      style="
-        background-color: #e9eff2;
-        height: 820px;
-        width: 1660px;
-        margin: 130px;
-        border: solid 130px #303242;">
-      <!-- logo-left -->
-      <div>
-        <div style="margin-left: 60px; margin-top: 60px">
-          <img src="<LOGO_1/>" alt="Logo" />
-        </div>
-      </div>
+	<div style="margin: 5%">
+		 <!-- logo-left -->
+		<div
+		style="float: left;">
+			<img style="height: 100%; width: 100%; object-fit: cover;" src="<LOGO_1/>" alt="Logo" />
+		</div>
+  
+		<!-- logo-right -->
+		<div style="float: right;">
+			<img style="margin-right: auto; height: 100%; width: 100%; object-fit: cover;" src="<LOGO_2/>" alt="Logo" style="object-fit: cover;"/>
+		</div>
+	  </div>
 
-      <!-- logo-right -->
-      <div>
-        <div
-          style="
-            margin-right: 60px;
-            margin-top: 0;
-            display: flex;
-            justify-content: flex-end;">
-          <img src="<LOGO_2/>" alt="Logo" />
-        </div>
-      </div>
-
+    <div>
       <!-- title-potvrda -->
       <div>
-        <h2>POTVRDA</h2>
+        <h2 style="margin-top: 15%;">POTVRDA</h2>
         <h2><span>O POHAĐANJU OBUKE</span></h2>
       </div>
 
@@ -125,7 +197,7 @@
 
       <!-- naziv obuke -->
       <div>
-        <h3><CPNT_TITLE />naziv obuke</h3>
+        <h3><CPNT_TITLE/>naziv obuke</h3>
       </div>
 
 	  <!-- datum -->
