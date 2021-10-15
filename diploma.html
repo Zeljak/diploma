@@ -114,6 +114,7 @@
 		background-color: #e9eff2;
 		margin: 0;
 		width: 100vw;
+		height: 100vh;
 	}
        
 	h1 {
@@ -163,6 +164,7 @@
         font-size: 4.44vw;
         line-height: 60px;
         text-align: center;
+		margin-top: 31.25vh;
       }
 
 	h5 {
@@ -179,20 +181,27 @@
   </head>
 
   <body>
-	<div style="margin: 5%">
+	<div style="position: absolute; top: 6.7vw; left: 6.7vw; right: 6.7vw;">
 		 <!-- logo-left -->
 		<div
-		style="float: left;">
+		style="position: absolute; left: 3.125vw; top: 3.125vw; max-width: 14.4vw">
 			<img style="height: 100%; width: 100%; object-fit: cover;" src="<LOGO_1/>" alt="Logo" />
 		</div>
   
 		<!-- logo-right -->
-		<div style="float: right;">
+		<div style="position: absolute; right: 3.125vw; top: 3.125vw; max-width: 14.4vw">
 			<img style="margin-right: auto; height: 100%; width: 100%; object-fit: cover;" src="<LOGO_2/>" alt="Logo" style="object-fit: cover;"/>
 		</div>
 	  </div>
 
-    <div>
+    <div style="
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 13.4vw);
+	justify-content: space-between;
+	position: absolute;
+	width: calc(100% - 13.4vw);
+	">
       <!-- title-potvrda -->
       <div>
         <h2 style="margin-top: 15%;">POTVRDA</h2>
